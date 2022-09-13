@@ -5,9 +5,10 @@
 #include "main.h"
 
 /*
- * main()
- * 	Parameters: None
- * 	Return: 0 (Success)
+ * main - Print _putchar
+ *
+ * Return: 0 (Success)
+ *
  */
 
 int main(void)
