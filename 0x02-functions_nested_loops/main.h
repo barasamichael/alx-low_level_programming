@@ -5,6 +5,6 @@
 void print_alphabet(void);
 
 /* Displays a character */
-char _putchar(char c);
+int _putchar(char c);
 
 #endif
