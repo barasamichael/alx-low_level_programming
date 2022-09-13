@@ -2,7 +2,7 @@
  * This program displays the word _putchar
  */
 
-#include "_putchar.h"
+#include "main.h"
 
 int main(void)
 {
