@@ -1,24 +1,17 @@
 #include "main.h"
-
 /**
- * main - Display all lowercase characters
+ * print_alphabet -function that prints alphabet in lower case.
  *
- * Return: 0 (Success)
- *
+ * Return: Always 0 (success).
  */
-
-int main(void)
+void print_alphabet(void)
 {
-	char current = 'a'; /* this is the first character */
-	char last = 'z'; /* this is the last character */
+	int n;
 
-	while (current <= last)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		_putchar(current); /* display current character */
-		current++; /* increment current character */
+		_putchar(n);
 	}
-	
-	_putchar('\n');
 
-	return (0);
+	_putchar('\n');
 }
