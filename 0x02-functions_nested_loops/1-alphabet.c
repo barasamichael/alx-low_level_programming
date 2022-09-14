@@ -1,4 +1,4 @@
-#include "trial.h"
+#include "main.h"
 
 /**
  * main - Display all lowercase characters
