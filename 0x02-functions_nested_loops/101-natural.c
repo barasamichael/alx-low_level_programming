@@ -5,7 +5,7 @@
  * Return: Always 0 (success).
  */
 
-void main(){
+int main(void){
 	int max_value = 1024;
 	int value;
 	int sum = 0; /* Holds sum for all multiples */
@@ -22,4 +22,6 @@ void main(){
 	}
 
 	printf("%d\n", sum);
+
+	return (0);
 }
