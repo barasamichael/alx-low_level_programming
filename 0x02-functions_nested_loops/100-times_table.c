@@ -29,7 +29,7 @@ void print_times_table(int n)
 				else
 					printf("%d", product);
 				
-				/* Ensure only trailing comma */
+				/* Ensure only trailing comma made */
 				if (column != table_size)
 					printf(",");
 			}
