@@ -25,6 +25,7 @@ int main(void)
 
 		term_2 = next_term;
 		next_term = term_1 + term_2;
+		break;
 	}
 	return (0);
 }
