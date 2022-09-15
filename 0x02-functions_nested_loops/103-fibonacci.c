@@ -22,6 +22,6 @@ int main(void)
 		next_term = term_1 + term_2;
 	}
 
-	printf("%ld\n", 4613732);
+	printf("%d\n", 4613732);
 	return (0);
 }
