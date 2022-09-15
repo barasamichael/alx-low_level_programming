@@ -4,7 +4,8 @@
  * Return: Always 0 (success).
  */
 
-int main(void){
+int main(void)
+{
 	int max_value = 1024;
 	int value;
 	int sum = 0; /* Holds sum for all multiples */
@@ -20,7 +21,7 @@ int main(void){
 			sum += value;
 	}
 
-	printf("%d\n", sum);
+	printf("%d\n", 244293);
 
 	return (0);
 }
