@@ -17,14 +17,12 @@ int main(void)
 
 	for (count = 3; count <= total; count++)
 	{
-		if (count != total && next_term != 20365011074)
+		if (count != total)
 			printf("%ld, ", next_term);
 		else
 			printf("%ld\n", next_term);
 		term_1 = term_2;
 
-		if (next_term == 20365011074)
-			break;
 		term_2 = next_term;
 		next_term = term_1 + term_2;
 	}
