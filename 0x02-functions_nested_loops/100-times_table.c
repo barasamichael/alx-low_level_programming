@@ -20,7 +20,10 @@ void print_times_table(int n)
 			for (column = 0; column <= table_size; column++)
 			{
 				product = row * column;
-				printf("%4d", product);
+				if (row != 0)
+					printf("%4d", product);
+				else
+					printf("%d", product);
 				
 				/* Ensure only trailing comma */
 				if (column != table_size)
