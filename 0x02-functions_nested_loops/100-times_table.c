@@ -11,10 +11,12 @@ void print_times_table(int n)
 	if (table_size <= 15 && table_size >= 0)
 	{
 		/* Display row */
-		for (int row = 0; row <= table_size; row++)
+		int row;
+		for (row = 0; row <= table_size; row++)
 		{
 			int product; /* holds the product of row and column */
-			for (int column = 0; column <= table_size; column++)
+			int column;
+			for (column = 0; column <= table_size; column++)
 			{
 				product = row * column;
 				printf("%4d", product);
