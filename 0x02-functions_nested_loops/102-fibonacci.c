@@ -10,11 +10,10 @@ int main(void)
 	int term_1 = 0;
 	int term_2 = 1;
 	int total = 100;
-
-	printf("%d, %d, ", term_1, term_2);
-
 	int count;
 	int next_term = term_1 + term_2;
+
+	printf("%d, %d, ", term_1, term_2);
 
 	for (count = 3; count <= total; count++)
 	{
