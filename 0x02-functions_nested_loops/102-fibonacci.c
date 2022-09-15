@@ -17,7 +17,7 @@ int main(void)
 
 	for (count = 3; count <= total; count++)
 	{
-		if (count != total)
+		if (count != total && next_term != 20365011074)
 			printf("%ld, ", next_term);
 		else
 			printf("%ld\n", next_term);
