@@ -20,7 +20,7 @@ void print_times_table(int n)
 			for (column = 0; column <= table_size; column++)
 			{
 				product = row * column;
-				if (row != 0)
+				if (column != 0)
 					printf("%4d", product);
 				else
 					printf("%d", product);
