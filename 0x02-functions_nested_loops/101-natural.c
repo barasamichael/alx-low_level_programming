@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * print_times_table - entry point.
- * @n: input.
+ * main - entry point.
  * Return: Always 0 (success).
  */
 
@@ -10,7 +9,7 @@ int main(void){
 	int value;
 	int sum = 0; /* Holds sum for all multiples */
 
-	for (value = 1; value < max_value; value++)
+	for (value = 3; value < max_value; value++)
 	{
 		/* Find Multiples of 3 */
 		if (value % 3 == 0)
