@@ -8,7 +8,8 @@
 
 void puts2(char *string)
 {
-	int length, chosen_character = 0;
+	int length = 0; /* Holds length of string */
+	int chosen_character = 0; /* Holds Current Character */
 
 	/* Find length of given string */
 	while (string[length] != '\0')
