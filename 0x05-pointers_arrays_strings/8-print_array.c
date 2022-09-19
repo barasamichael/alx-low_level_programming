@@ -17,6 +17,8 @@ void print_array(int *array, int length)
 		/* Display the comma for elements before the last one */
 		if (index != length - 1)
 			printf(", ");
+
+		index++; /* Go to the next index in the array */
 	}
 	printf("\n");
 }
