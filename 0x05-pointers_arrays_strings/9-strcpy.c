@@ -7,7 +7,7 @@
  * Return: a pointer to the destination variable
  */
 
-char *_strcpy(char *destination char *source)
+char *_strcpy(char *destination, char *source)
 {
 	int index;
 
