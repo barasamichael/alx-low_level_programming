@@ -17,6 +17,5 @@ char *_strcpy(char *destination, char *source)
 		destination[index] = source[index]; /* Create a copy */
 	}
 	destination[index] = '\0'; /* Add the null character */
-	
-	return (destination); /* Return the pointer to the destination pointer variable */
+	return (destination); /* Return the destination pointer variable */
 }
