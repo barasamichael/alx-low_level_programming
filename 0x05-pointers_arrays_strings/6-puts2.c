@@ -8,7 +8,7 @@
 
 void puts2(char *string)
 {
-	int length, chosen_index = 0;
+	int length, chosen_character = 0;
 
 	/* Find length of given string */
 	while (string[length] != '\0')
