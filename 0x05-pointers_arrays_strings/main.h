@@ -10,5 +10,6 @@ void _puts(char *string);
 int _putchar(char c);
 void print_rev(char *string);
 void rev_string(char *string);
+void puts2(char *string);
 
 #endif
