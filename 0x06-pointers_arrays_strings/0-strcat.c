@@ -1,35 +1,32 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * _strcat - starting point of a function
- *
- * @dest: First values
- *
- * @src: second value
- *
- * Return: Return nothing
+ * *_strcat - concatenates two strings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return to dest
  */
-
 
 char *_strcat(char *dest, char *src)
 {
-	int len_dest = strlen(dest);
-	int len_src = strlen(src);
-	int str_size = len_dest + len_src + 1;
-	char *a = calloc(str_size + 1, sizeof(char));
+	int i;
+	int j;
 
-	for (int i = 0; i < len_dest; i++)
-		a[i] = dest[i];
+	i = 0;
+	j = 0;
 
-	a[len_dest] = ' ';
-	
-	for (int i = 0; i < len_src; i++)
-		a[len_dest + i] = src[i];
-	
-	a[str_size - 1] = '\0';
-	_putchar('\n');
-	return (a);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
