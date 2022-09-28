@@ -1,20 +1,21 @@
-#include <stdio.h>
+#include <main.h>
+
+/**
+ * _puts_recursion - prints the character at current index
+ * @s: pointer to the first character of the string
+ */
 
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		printf("\n");
+		_putchar("\n");
 		return;
 	}
 
-	printf("%c", *s);
+	_putchar("%c", *s);
 	s++;
 	_puts_recursion(s);
-}
-
-int main(){
-	_puts_recursion("James");
 }
 
 
