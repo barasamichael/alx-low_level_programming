@@ -1,21 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * free_list - free the memory allocated to a linked list
- * @head: a double pointer to a linked list
- * Return: nothing
+ * free_list - Realease the memory allocated for a list
+ *
+ * @head: A pointer to the first node of the list to free
  */
 void free_list(list_t *head)
 {
-	list_t *current, *next;
-
-	current = head;
-
-	while (!current)
+	if (head)
 	{
-		next = current->next;
-		free(current);
-		current = next;
+		free_list(head->next);
+		if (head->str)
+			free(head->str);
+		free(head);
 	}
-	head = NULL;
 }

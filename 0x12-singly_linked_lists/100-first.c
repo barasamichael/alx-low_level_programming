@@ -1,15 +1,16 @@
-#include "lists.h"
+#include<stdio.h>
 
 /**
- * show_first - executes before the main function
- *
- * Return: nothing
+ * myStartupFun - Apply the constructor attribute to myStartupFun() so that it
+ *   is executed before main()
  */
-void startup(void)
+void myStartupFun(void) __attribute__ ((constructor));
+
+/**
+ * myStartupFun - implementation of myStartupFun
+ */
+void myStartupFun(void)
 {
-	char *str;
-
-	str = "You're beat! and yet, you must allow,\nI bore my house upon my back!\n";
-	printf("%s", str);
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
-
