@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
-  * free_listint2 - frees memory allocated to linked list 
+  * free_listint2 - frees memory allocated to linked list
   * and assign value 0 to head
-  * @head: ...
+  * @head: first node of linked list
   *
-  * Return: ...
+  * Return: nothing
   */
 void free_listint2(listint_t **head)
 {
